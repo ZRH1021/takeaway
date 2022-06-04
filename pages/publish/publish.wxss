@@ -1,0 +1,22 @@
+/* pages/publish/publish.wxss */
+.button{
+  border-radius: 80rpx;
+    margin: 70rpx 50rpx;
+    font-size: 35rpx;
+    color: white;
+    background-color:green;
+}
+.container1{
+  border-radius: 80rpx;
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 65rpx;
+  justify-content: center;
+}
+.container2{
+    background-color:lightgray;
+}
+.text{
+  text-align: center;
+}
+

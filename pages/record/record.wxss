@@ -1,0 +1,35 @@
+/* pages/record/record.wxss */
+.goodname{
+    font-weight: bold;
+  }
+  .goodcredit{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999999
+  }
+  .item{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  .desc{
+    margin-left: 20px;
+    line-height: 30px;
+  }
+  .status{
+    position: absolute;
+    right: 50px;
+  }
+  .tittle{
+      font-size: x-large;
+      text-align: center;
+      text-justify: center;
+      height: 70rpx;
+  }
+  .hr2{
+    height: 4rpx;
+    background-color: #cccccc;
+    opacity: 1; 
+  }

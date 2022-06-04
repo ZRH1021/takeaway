@@ -1,0 +1,40 @@
+ <view class="container">
+    <!-- tab导航栏 -->
+    <!-- scroll-left属性可以控制滚动条位置 -->
+    <!-- scroll-with-animation滚动添加动画过渡 -->
+    <scroll-view scroll-x="true" class="nav" scroll-left="{{navScrollLeft}}" scroll-with-animation="{{true}}">
+        <block wx:for="{{navData}}" wx:for-index="idx" wx:for-item="navItem" wx:key="idx">
+
+            <view class="nav-item {{currentTab == idx ?'active':''}}"  data-current="{{idx}}" bindtap="switchNav">{{navItem.text}}</view>
+        </block>        
+    </scroll-view>
+    <!-- 页面内容 -->
+    <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">        
+        <swiper-item style="overflow:scroll" wx:for="{{yxlist}}" wx:for-item="item" >
+          <block wx:for="{{item}}" wx:for-item="sitem" >
+  
+  <view class="desc" bindtap="clicktoswitch" style="white-space:pre-wrap" data-item='{{sitem}}'>{{sitem.takeoutinfo}}
+配送时间：{{sitem.time1}}~{{sitem.time2}}
+是否含有液体：{{sitem.liquid}}
+状态：{{sitem.status}}</view>
+ <view class="hr2"></view> 
+</block> 
+ </swiper-item>
+        
+  <!-- <block wx:for="{{yxlist}}" wx:for-item="item" wx:for-index="index">
+  <view class="item" bindtap="seeDetail" id="{{index}}">
+  <view class="desc">
+    <view class="takeoutinfo">{{item.takeoutinfo}} </view>
+    <view class="time">
+      <view>配送时间：{{item.time1}}~{{item.time2}}</view>
+      <view class="liquid">是否含有液体：{{item.liquid}}</view>
+  </view>
+ </view>
+  <view class="hr2"></view> 
+</view></block> -->
+
+
+    </swiper>
+</view> 
+
+

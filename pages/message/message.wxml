@@ -1,0 +1,40 @@
+<!--pages/mess/mess.wxml-->
+<!-- <view class="fish_index"> -->
+    <!--导航 开始-->
+    <!-- <view class="imfor_cate">
+        <image mode="widthFix" bindtap="clickone" src="https://i.loli.net/2021/05/20/4y1JKAMcaIzqC3H.png" />
+        <image mode="widthFix" bindtap="clicktwo" src="https://i.loli.net/2021/05/20/FcW89bsqXxA2lrj.png" />
+        <image mode="widthFix" bindtap="clickthree" src="https://i.loli.net/2021/05/20/kyfOV7QmHa5gzAI.png" />     
+    </view> -->
+    <!--导航 结束-->
+<!-- </view> -->
+
+<!-- <view class="line" style="margin-top:0px;"></view> -->
+
+<view style="margin-top:5x" wx:for="{{mess}}">
+  <view style="display:flex" bindtap="contact" data-index="{{index}}">
+    <image src="{{item.touserimg}}" class="micon"></image>
+    
+    <view class="name">
+
+      <view style="font-size:40rpx">
+        {{item.tousernickname}}({{item.ordername}}) 
+      </view>
+
+      <view style="font-size:35rpx;color:#aaa">
+        {{item.lastcontent}}
+      </view>
+      
+    </view>
+    
+    <view class="time">
+        {{item.lasttime}}
+    </view>  
+  </view>
+  <view class="line"></view>
+</view>
+
+<image wx:if="{{mess.length==0}}" style="margin-top:20px;width:100%;height:300px;" src="/images/wu.jpg"></image>
+<!-- 
+<button bindtap="k">111</button> -->
+

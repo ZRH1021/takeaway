@@ -1,0 +1,49 @@
+
+<form class="view1" bindsubmit="sumbit" wx:if="{{!hidden}}">
+  <view style="height: 35px;">
+    <label>收货人:</label>
+    <input placeholder="姓名" name="name"></input>
+  </view>
+  <view class="container">
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+  <view style="height: 35px;">
+    <label>联系电话:</label>
+    <input placeholder="联系电话" name="phone"></input>
+  </view>
+  <view class="container">
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+  <view style="height: 35px;">
+    <label>收货地址:</label>
+    <input placeholder="收货地址" name="address"></input>
+  </view>
+  <view class="container">
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+  <view class="btn-area">
+    <button form-type="submit" size="mini" type="primary">提交</button>
+    <button form-type="reset" size="mini" type="default">重置</button>
+  </view>
+</form>
+<view style="padding: 5px 10px;" wx:else>
+  <view>
+    <button bindtap="add" type="primary">新增</button>
+  </view>
+  <view wx:for="{{dataList}}">
+     <view style="margin-top: 7px;">
+      <view style="font-size: 16px;position: relative;">{{item.name}}
+        <text>{{item.phone}}</text>
+        <button size="mini" type="warn" data-id="{{item.id}}" style="font-size: 9px;position: absolute;right: 9px;" bindtap="del">删除</button>
+      </view>
+      <view style="font-size: 12px;color: #888;">{{item.address}}</view>
+      <view class="container">
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </view>
+    </view>
+  </view>
+</view>

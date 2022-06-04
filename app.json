@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/my/my", 
+        "pages/login/login",
+        "pages/detail/detail",
+        "pages/index/index",
+        "pages/publish/publish",
+        "pages/publish/getplace/getplace",
+        "pages/publish/confirm/confirm",
+        "pages/location/location",
+        "pages/myorder/detail/detail",
+        "pages/myorder/myorder",
+        "pages/goods_list/goods_list",
+        "pages/record/record", 
+        "pages/goods_list/gooddetail/gooddetail",
+        "pages/contact/contact",
+        "pages/message/message"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#4169e1",
+        "navigationBarTitleText": "外卖帮送平台",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#bfc1ab", 
+        "selectedColor": "#4169e1",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "广场",
+                "iconPath": "icon/分类or广场or其他.png",
+                "selectedIconPath": "icon/分类or广场or其他_填充.png"
+            },
+            {
+                "pagePath": "pages/publish/publish",
+                "iconPath": "icon/加号.png",
+                "selectedIconPath": "icon/加号.png"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "text": "消息",
+                "iconPath": "icon/消息.png",
+                "selectedIconPath": "icon/消息_selected.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "icon/我的 (1).png",
+                "selectedIconPath": "icon/我的-填充.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,34 @@
+page{
+    font-size: x-large;
+}
+.view1 label {
+  font-size: 16px;
+  display: inline-flex;
+  width: 20%;
+}
+
+.view1 input {
+  font-size: 14px;
+  display: inline-flex;
+}
+
+.view1 {
+  padding: 10px 10px;
+}
+
+/* 横着的分割View样式 */
+
+/*分割线样式*/
+
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 1px;
+}
+.btn-area{
+ margin-top: 10px;
+text-align: center;
+}
+.btn-area button{
+  margin: 0px 5px;
+}

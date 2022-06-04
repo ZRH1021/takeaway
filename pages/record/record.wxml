@@ -1,0 +1,17 @@
+<!--pages/record/record.wxml-->
+<view class="tittle">兑换记录</view>
+
+<view class="hr2"></view>
+
+<view class="list">
+<template is="exchange" data="{{array}}"></template>
+</view>
+<template name="exchange">
+  <block wx:for="{{array}}" wx:for-item="item" wx:for-index="index">
+  <view class="item" id="{{index}}">
+  <view class="desc">
+    <view class="goodname">{{index+1}} 商品名称：{{item.goodsname}} </view>
+ </view>
+</view>
+</block>
+</template>

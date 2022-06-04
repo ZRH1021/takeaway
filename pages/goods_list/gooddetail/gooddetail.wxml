@@ -1,0 +1,17 @@
+<view>商品信息：</view>
+<view class="hr2"></view>
+
+<view class="image">
+    <image src="{{goodimg}}"></image>
+</view>
+
+<view>
+    商品名称：{{goodname}}
+</view>
+
+<view>
+    商品价格：{{goodcredit}}
+</view>
+
+<view class="hr2"></view>
+<button class="button" bindtap="buy">购买</button>

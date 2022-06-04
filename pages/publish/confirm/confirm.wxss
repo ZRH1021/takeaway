@@ -1,0 +1,17 @@
+
+.title{
+    text-align: center;
+    font-size: larger;
+}
+
+.hr2{
+    height: 3px;
+    background-color: #cccccc;
+    opacity: 0.2;
+  
+  }
+
+.button{
+    background-color: green;
+    color: white;
+}

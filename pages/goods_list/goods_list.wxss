@@ -1,0 +1,36 @@
+page {
+  font-size: x-large;
+}
+.goods_img {
+  height: 200rpx;
+  width: 200rpx;
+  position: absolute;
+}
+.hr1 {
+  height: 4rpx;
+  background-color: black;
+  opacity: 0.5;
+}
+.hr2 {
+  height: 4rpx;
+  background-color: #cccccc;
+  opacity: 1;
+}
+.goods_price {
+  color: orangered;
+}
+.goods_item {
+  height: 220rpx;
+}
+.container {
+  display: flex;
+  height: 100rpx;
+  background-color: whitesmoke;
+  align-items: center;
+}
+.container .text1 {
+  margin-left: 30px;
+}
+.container .text1 {
+  margin-right: 110px;
+}

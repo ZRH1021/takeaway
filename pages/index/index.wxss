@@ -1,0 +1,151 @@
+page{
+    font-size: x-large;
+}
+.container{
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+.left{
+  color: #9d9d9d;
+}
+.right{
+  color: #9d9d9d;
+}
+.text1-1{
+  color: #9d9d9d;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align:center
+}
+.nav-item{
+  width: 25%;
+  margin-top:20px;
+  font-size: 12px;
+}
+.hr{
+  height: 5px;
+  background-color: #cccccc;
+  margin-top: 10px;
+  opacity: 0.2
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-size: 13px;
+  color: #999999;
+}
+.right{
+  position: absolute;
+  right: 10px;
+  color: #cccccc
+}
+.hr2{
+  height: 2px;
+  background-color: #cccccc;
+  opacity: 0.2;
+
+}
+.item{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.desc{
+  margin-left: 20px;
+  line-height: 30px;
+}
+.id
+{
+  font-size: 12px;
+
+}
+.takeoutinfo{
+  font-weight: bold;
+}
+.time{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999
+}
+.liquid{
+  position: absolute;
+  right: 50px;
+}
+.tabTit{
+    height:90rpx;
+    line-height: 90rpx;
+    border-bottom: solid 1px #eee;
+    width: 750rpx;
+    z-index: 1;
+    background: #fff;
+    font-size:20px;
+    text-align: center;
+  }
+  .flex1 {
+    flex: 1;
+    overflow: hidden;
+    display: block;
+}
+ 
+/*弹性盒模型*/
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.tabTit .active{
+    color:#e64340;
+    background: #fff;
+    font-size: 15rpx;
+  }
+   
+  .tabTit .active image{
+    transform: rotate(180deg);
+    background: none;
+  }
+   
+  .tabTit image{
+    width:26rpx;
+    height:26rpx;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 15rpx;
+  }
+   
+  .tabLayer{
+    box-shadow: 0 5px 5px rgba(0,0,0,.15);
+    width:750rpx;
+    overflow: hidden;
+    z-index: 1;
+    background: #fff;
+    padding-bottom: 40rpx;
+    border-bottom: solid 1px #eee;
+    text-align: center;
+  }
+  .tabLayer text{
+    width:210rpx;
+    height:60rpx;
+    line-height:60rpx;
+    float:left;
+    border: solid 1px #eee;
+    margin:20rpx 0 0 26rpx;
+    font-size:18px;
+  }
+  .tabLayer .active{
+    color:#e64340;
+    border-color:#e64340;
+    }
+  swiper{
+      width: 100%;
+      height: calc(100vw*1080/2433);
+  }
+  image{
+      width: 100%;
+  }
+

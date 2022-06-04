@@ -1,0 +1,73 @@
+/* pages/message/message.wxss */
+/* pages/mess/mess.wxss */
+page{
+    width: 100%;
+    height: 100%;
+}
+    .imfor_cate image {
+      margin-top: -40rpx;
+      padding: 70rpx;
+      width: 110rpx;
+      height: 120rpx;
+    }
+    .chat{
+      width: 100%;
+      height: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+    .chat image{
+      width: 120%;
+      height: 120%;
+    }
+    
+    .it-post {
+      
+    
+      width: 100%;
+      height:68%;
+      display: flex;
+      align-items: center;
+      
+      justify-content: center; 
+      
+    }
+    .it-post audio{
+      
+      border-radius: 40rpx 40rpx 40rpx 40rpx;
+    }
+  
+    .line{
+      margin-right: 5%;
+      margin-left: 5%;
+      height:2rpx;
+      background:#aaa;    
+    }
+  
+    .micon{
+      margin-left: 5%;
+      margin-top: 24rpx;
+      margin-bottom: 24rpx;
+      border-radius: 40rpx;
+      border: 1px solid red;
+      width: 80rpx;
+      height: 80rpx;
+    }
+    .name{
+      margin-left: 2%;
+      display:block;
+      margin-top:24rpx;
+      margin-bottom:24rpx;
+      flex: 0.9;
+    }
+    .time{
+      /* float:right; */
+      /* right:7%;
+      position: fixed; */
+      color: #aaa;
+      font-size: 35rpx;
+      /* margin-left:50%; */
+      margin-top:30rpx;
+      margin-right: 0%;
+    }

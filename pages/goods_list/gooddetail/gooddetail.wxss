@@ -1,0 +1,17 @@
+/* pages/goods_list/gooddetail/gooddetail.wxss */
+page {
+  font-size: x-large;
+}
+image {
+  width: 100vw;
+  height: 100vw;
+}
+.button {
+  background-color: orangered;
+  color: white;
+}
+.hr {
+  height: 2px;
+  background-color: #cccccc;
+  opacity: 1;
+}

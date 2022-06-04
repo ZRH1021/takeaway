@@ -1,0 +1,9 @@
+/* pages/publish/getplace/getplace.wxss */
+
+.hr2{
+    height: 2px;
+    background-color: #cccccc;
+    opacity: 1;
+    
+  }
+

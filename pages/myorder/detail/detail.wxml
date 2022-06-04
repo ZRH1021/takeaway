@@ -1,0 +1,42 @@
+<view>外卖详细信息：</view>
+<view class="hr2"></view>
+<view>
+    外卖编号：{{orderid}}
+</view>
+<view>
+    外卖：{{takeoutinfo}}
+</view>
+<view>
+    时间：{{time1}}~{{time2}}
+</view>
+<view>
+    取货地点：{{placefrom}}
+</view>
+<view>
+    发布者：{{name}}
+</view>
+<view>
+    联系电话：{{phone}}
+</view>
+<view>
+    送货地址：{{address}}
+</view>
+<view>
+    是否含有液体：{{liquid}}
+</view>
+<view>
+    外卖状态:{{status}}
+</view>
+
+<view class="hr1"></view>
+
+<view hidden="{{hidden}}">
+
+    <button class="finish" bindtap="finish">{{content}}</button>
+
+    <view class="hr2"></view>
+
+    <view hidden="{{hidden2}}">
+        <button class="cancel2" bindtap="cancel2">取消订单</button>
+    </view>
+</view>

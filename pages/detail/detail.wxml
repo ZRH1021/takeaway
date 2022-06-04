@@ -1,0 +1,25 @@
+<!--pages/detail/detail.wxml-->
+<view hidden="{{clockShow}}">
+<view class="title" style="color:#4169e1 ;">订单信息</view>
+<view class="text">
+<view>{{array.takeoutinfo}}</view>
+<view>配送时间：{{array.time1}}~{{array.time2}}</view>
+<view>是否含有液体：{{array.liquid}}</view>
+<view>取货地点：{{array.placefrom}}</view>
+<view>配送地点：{{array.address}}</view>
+<view>发布者：{{array.name}}</view>
+<view>联系方式：{{array.phone}}</view>
+</view>
+<button class="button2" bindtap="start">接收订单</button></view>
+<view class="clock" hidden="{{!clockShow}}" style="height:{{clockHeight}}rpx">
+  <view class="text3">订单已接收</view>
+  <view class="text4">您可以在一分钟内取消订单</view>
+  <view class="text5">剩余时间：</view>
+  <view class="progress">
+    <canvas canvas-id="progress_bg" class="progress_bg"></canvas>
+    <canvas canvas-id="progress_active" class="progress_active"></canvas>
+    <view class="progress_text">{{timeStr}}</view>
+  </view>
+    <button class="button2" bindtap="cancel" >取消订单</button>
+    <button class="button2" bindtap="Return" >确认</button>
+</view>

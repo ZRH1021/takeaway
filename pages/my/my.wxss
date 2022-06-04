@@ -1,0 +1,53 @@
+page{
+  font-size: 40rpx;
+  background: #ECECEC;
+}
+.header{
+  height: 300rpx;
+  background: #87CEFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header1{
+  height: 150rpx;
+  background: #87CEFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #888888
+}
+.header1 button{
+  border: 1px solid transparent;
+background-color: #87CEFA;
+color: white;
+
+}
+/* 头像 */
+.header .userImg{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius:120rpx;
+  border: 8rpx solid rgb(192, 225, 245); 
+  margin-bottom: 30rpx;
+}
+
+.content .coupon,.content .signOut,
+.content .address,.content .tel{
+  background: white;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx; 
+}
+.content .coupon,.content .signOut{ 
+  margin: 15rpx 0;
+}
+.content .signOut{
+  text-align: center;
+  background-color: red;
+  color: white;
+  height: 80rpx;
+}

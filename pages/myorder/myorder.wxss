@@ -1,0 +1,65 @@
+/**index.wxss**/
+page{
+    width: 100%;
+    height: 100%;
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  .nav {
+    height: 80rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    line-height: 80rpx;
+    background: #f7f7f7;
+    font-size: 16px;
+    white-space: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .nav-item {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+  .nav-item.active{
+    color: red;
+    font-weight: bold;
+  }
+  .tab-box{
+    background: #fff;
+    padding-top: 80rpx;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .tab-content{
+    overflow-y: scroll;
+  }
+  .desc{
+    margin-left: 20px;
+    line-height: 30px;
+  }
+  .takeoutinfo{
+    font-weight: bold;
+  }
+  .time{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999999
+  }
+  .liquid{
+    position: absolute;
+    right: 50px;
+  }
+
+  .hr2{
+    height: 2px;
+    background-color: #cccccc;
+    opacity: 0.2;
+  
+  }

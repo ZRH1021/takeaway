@@ -1,0 +1,88 @@
+
+<scroll-view class="container"
+scroll-y="true" wx:if="{{hidden==false}}">
+<swiper autoplay circular indicator-dots>
+<swiper-item><image mode="widthFix" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.vjshi.com%2F2021-05-20%2Fcf10d265c3b23119c67baf9f70ff14f2%2F00001.jpg%3Fx-oss-process%3Dstyle%2Fwatermark&refer=http%3A%2F%2Fpic.vjshi.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1656570244&t=26728da8770c11bdcc0297661217e0e7"/></swiper-item>
+<swiper-item><image mode="widthFix" src="https://news.whu.edu.cn/__local/3/1C/40/BCA8A4A76502F8AED40EA3471E8_892E7E12_987E1.png"/></swiper-item>
+<swiper-item><image mode="widthFix" src="http://5b0988e595225.cdn.sohucs.com/images/20170827/6728a7a5c9484e5f979aed5d618e04d3.jpeg"/></swiper-item>
+</swiper>
+
+<!-- <view
+wx:for="{{list}}"
+wx:for-index="index"
+wx:for-item="item"
+wx:key="name">
+姓名：{{item.name}}
+外卖地点：{{item.takeoutPosition}}
+目的地：{{item.destination}}
+是否含有液体：<checkbox checked="{{item.haveLiquid}}"></checkbox>
+手机号：{{item.phoneNum}}
+帮送时间：{{item.time}}
+</view>>
+<view>----------------------------------------------</view> -->
+<view class="head">
+<view>订单信息</view>
+<view class="right">></view>
+</view>
+<view class="tabTit box">
+  <view class="flex1" wx:for="{{tabTxt}}" wx:key="type" data-index="{{index}}" bindtap="filterTab">
+    <text>{{item}}</text></view></view>
+<view class="tabLayer" hidden="{{tab[0]}}">
+    <text class="{{place_id==0?'active':''}}" data-id="0" data-index="0" data-txt="取货地点:不限" bindtap="filter">不限</text>
+    <text class="{{place_id==item.id?'active':''}}" wx:for="{{placeList}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="0" data-txt="取货地点:{{item.title}}" bindtap="filter" >{{item.title}}</text>
+</view>
+<!-- <view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{place2_id==0?'active':''}}" data-id="0" data-index="1" data-txt="送货地点:不限" bindtap="filter">不限</text>
+    <text class="{{place2_id==item.id?'active':''}}" wx:for="{{place2List}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="1" data-txt="送货地点:{{item.title}}" bindtap="filter">{{item.title}}</text>
+</view> -->
+<view class="tabLayer" hidden="{{tab[1]}}">
+    <text class="{{liquid_id==0?'active':''}}" data-id="0" data-index="1" data-txt="是否含有液体:不限" bindtap="filter">不限</text>
+    <text class="{{liquid_id==item.id?'active':''}}" wx:for="{{liquidList}}" wx:key="pp" wx:for-item="item" data-id="{{item.id}}" data-index="1" data-txt="是否含有液体:{{item.title}}" bindtap="filter" >{{item.title}}</text>
+</view>
+<view class="list">
+<template is="order" data="{{array}}"></template>
+</view>
+<template name="order">
+  <block wx:for="{{array}}" wx:for-item="item" wx:for-index="index">
+  <view class="item" bindtap="seeDetail" id="{{item.id}}">
+  <view class="desc">
+    <view class="takeoutinfo">{{item.takeoutinfo}} </view>
+    <view class="time">
+      <view>配送时间：{{item.time1}}~{{item.time2}}</view>
+      <view class="liquid">是否含有液体：{{item.liquid}}</view>
+  </view>
+ </view>
+  <view class="hr2"></view> 
+</view></block>
+</template>
+</scroll-view>
+<view style="padding:20px" wx:else>
+<button type="primary" style="text-align: center;margin-top: 70%;" bindtap="login">请先登录</button>
+</view>
+
+
+<!-- 发布的布局 -->
+<!-- <view class="container">
+  <text class="left" bindtap='Navigator' >{{Info.TakeoutInfo}}</text>
+  <text class="right" bindtap='Navigator'>{{Info.Time}}</text>
+  <text class="text1-1" bindtap='Navigator'>{{Info.Liquid}}</text>  
+</view> -->
+
+<!-- <view class="content">
+  <view class="classname">预约信息</view>
+  <view class="classname">预约日期：
+    <text>{{orderInfo.date}}</text>
+  </view>
+  <view class="classname">联系人姓名：
+    <text>{{orderInfo.username}}</text>
+  </view>
+  <view class="classname">联系人电话：
+    <text>{{orderInfo.telpho}}</text>
+  </view>
+  <view class="classname">联系人地址：
+    <text>{{orderInfo.address}}</text>
+  </view>
+  <view class="classname">其他备注信息：
+    <text>{{orderInfo.other}}</text>
+  </view>
+</view> -->

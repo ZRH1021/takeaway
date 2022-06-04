@@ -1,0 +1,28 @@
+<view class="container" wx:if="{{avatarUrl!=''}}">
+  <view class="header">
+    <view>
+      <image class="userImg" src="{{avatarUrl}}"></image>
+    </view>
+    <view class="userName">{{nickName}}</view>
+  </view>
+ 
+  <view class="content">
+    <button bindtap="aaaaaaa">我的收货地址</button>
+    <button bindtap="bbbbbbb">我的订单</button>
+    <button bindtap="gotoPage">积分商城</button>
+    <button open-type="feedback">意见反馈</button>
+    <button open-type="contact">客服对话</button>
+    <button open-type="share">分享</button>
+    <button style="color: white;" class="signOut" bindtap="dropOut">退出账号</button>
+    
+  </view>
+</view>
+<view class="container" wx:else>
+ <view class="header1"><button  bindtap="getUserProfile">点击授权</button></view></view>
+   <loading hidden="{{hidden}}">
+        加载中...
+</loading>
+
+
+
+

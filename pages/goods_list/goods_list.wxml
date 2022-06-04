@@ -1,0 +1,22 @@
+<view class="container">
+   
+    <view class="text1">我的积分:{{point}}</view>
+    <view class="text2" bindtap="exchange">兑换记录</view>
+</view>
+<view class="hr1"></view>
+<block wx:for="{{goodsList}}" >
+    
+    <view bindtap="ToGoodDetail" data-item='{{item}}' class="goods_item">
+        
+        <!-- 左侧图片 -->
+        <image src="{{item.img}}" class="goods_img"></image>
+     
+        <!-- 右侧信息 -->
+        <text style="margin-left: 30%;white-space:pre-wrap;" class="goods_name">商品名称：{{item.name}}</text>
+        <text style="margin-left: 30%;white-space:pre-wrap;" class="goods_price">积分：{{item.credit}}</text>
+   
+    </view>
+    
+    <view class="hr2"></view>
+
+</block>

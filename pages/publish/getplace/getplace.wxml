@@ -1,0 +1,10 @@
+<view hidden="hid">请先在“我的”中添加一个收货地址</view>
+<block wx:for="{{array}}">
+    <view style="white-space:pre-wrap" bindtap="choose" data-item='{{item}}'>
+姓名:{{item.name}}
+电话:{{item.phone}}
+地址:{{item.address}}
+
+</view>
+    <view class="hr2"></view> 
+</block>

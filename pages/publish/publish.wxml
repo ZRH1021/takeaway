@@ -1,0 +1,102 @@
+<scroll-view class="container"
+scroll-y="true" wx:if="{{hidden==false}}">
+<form bindsubmit="submitform">
+<view class="text">
+ <text style="color:#4169e1 ;">外卖信息：</text> 
+ <view class="container1"><input type="view" name="takeoutinfo" placeholder="请输入外卖信息" bindinput="handleInput"/></view>
+<!-- <text style="color:#4169e1 ;">配送时间区间：</text> -->
+<view style="color:#4169e1 ;">起始时间：</view>
+<view class="container1">
+<picker name="time1" mode="time" value="{{time1}}" start="00:00" end="24:00" bindchange="listenerTimePickerSelected1">
+    <view>{{time1}}</view>
+</picker></view>
+<text style="color:#4169e1 ;">终止时间：</text>
+<view class="container1">
+<picker name="time2" mode="time" value="{{time2}}" start="00:00" end="24:00" bindchange="listenerTimePickerSelected2">
+    <view>{{time2}}</view>
+</picker></view>
+<view style="color:#4169e1 ;">是否含有液体：</view>
+<view class="container1"><picker name="liquid" mode="selector" range="{{array1}}" value="{{index1}}" bindchange="listenerliquidPickerSelected">
+    <view>{{array1[index1]}}</view>
+</picker> </view>
+
+<text style="color:#4169e1 ;">外卖取货地址：</text> 
+<view class="container1"><picker name="placefrom" mode="selector" range="{{array2}}" value="{{index2}}" bindchange="listenerplacefromPickerSelected">
+    <view>{{array2[index2]}}</view>
+</picker> </view>
+<!-- <view class='container1' bindtap='bindShowMsg'>
+    <text>{{placefrom}}</text>
+</view>
+<view class='container2' wx:if="{{select}}">
+<view class="container2" bindtap='mySelect' data-name="选择地点">选择地点</view>
+<view class="container2" bindtap='mySelect' data-name="南二门">南二门</view>
+<view class="container2" bindtap='mySelect' data-name="珞珈门">珞珈门</view>
+<view class="container2" bindtap='mySelect' data-name="南大门">南大门</view>
+<view class="container2" bindtap='mySelect' data-name="茶港门">茶港门</view>
+</view> -->
+<text style="color:#4169e1 ;">外卖接收地址与用户信息：</text> 
+ <view class="container3"><button bindtap="gotochoose">选择</button></view>
+ <view class="container4"><view>
+ <view style="color:#4169e1">姓名:</view> {{name}}
+ </view>
+ <view> 
+    <view style="color:#4169e1">联系电话：</view>{{phone}}
+ </view>
+ <view>
+    <view style="color:#4169e1">地址：</view>{{loc}}
+ </view></view>
+<button class="button" hover-class="submit-active" form-type="submit" bindtap="Confirm">确认提交</button></view></form>
+</scroll-view>
+<view style="padding:20px" wx:else>
+<button type="primary" style="text-align: center;margin-top: 70%;" bindtap="login">请先登录</button>
+</view>
+
+<!-- <form bindsubmit="submitdate">
+<view>\n</view>
+<view class="view">填写招聘信息:</view>
+<view>\n</view>
+<form bindsubmit="totispage">
+<view class='page_row' >  
+  <view class="search">  
+    <view class="df search_arr">
+     <input class="df_1" placeholder="职位" value="{{searchValue}}" name="ziwei" bindinput='ziweiInput'></input>   
+  </view>      
+  </view>  
+  </view>
+<view class='page_row' >  
+  <view class="search">  
+    <view class="df search_arr">  
+     <input name="xinzi" bindinput='moneyInput' class="df_1" placeholder="薪资" value="{{searchValue}}"/>
+  </view>      
+  </view>  
+  </view>
+<view class='page_row' >  
+  <view class="search">  
+    <view class="df search_arr">  
+     <input name="xueli" bindinput='xueliInput' class="df_1" placeholder="学历要求" value="{{searchValue}}"/>
+  </view>      
+  </view>  
+  </view>
+</form>
+   <button class="address-add"  form-type="submit">发布招聘信息</button>  
+ 
+      </form> -->
+      <!-- <form bindsubmit="submitdate">
+      <view class="order">
+        <view class="TakeoutInfo">
+          <input name="TakeoutInfo" placeholder="请输入外卖信息" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="Time">
+          <input name="Time" placeholder="请输入预定时间区间" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <view class="date">
+          <input name="Liquid" placeholder="请确认外卖是否含有液体" placeholder-style="color:#eee" />
+        </view>
+        <view class="hr" style="margin-top:20rpx;margin-bottom:20rpx;"></view>
+        <button form-type="submit">确认提交</button>
+      </view>
+    </form> -->
+
+
